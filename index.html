@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter with Javascript</title>
+
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+</head>
+
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Currency Converter with Javascript</h1>
+            <nav><a href="http://www.sposatoanabel.com/blog/">Learn more</a></nav>
+        </div>
+        <!-- / header-limiter -->
+    </header>
+
+    <main class="main-content flex-container flex-box">
+        <div class="box-container">
+            <div class="row2 flex-container flex-box">
+                <h2>Currency Converter</h2>
+                <div class="amount-box flex-container flex-box">
+                    <label for="amount" class="amount-text">Amount</label>
+                    <input id="amount" value="1" type="number" name="amount">
+                </div>
+                <div class="dropdown-currency flex-container flex-box">
+                    <label for="currencyInput" class="name-currency">Currency you have</label>
+                    <select name="currencyInput" id="currencyInput" class="slate semi-square currencyDropdownStyle">
+                    </select>
+                </div>
+                <div class="dropdown-currency flex-container flex-box">
+                    <label for="currencyOutput" class="name-currency">Currency you want</label>
+                    <select name="currencyOutput" id="currencyOutput" class="slate semi-square currencyDropdownStyle">
+                    </select>
+                </div>
+                <div class="country-currency flex-container flex-column">
+                    <label class="name-currency flex-basis">What you want to buy at this price</label>
+                    <div class="flex-container centered-box">
+                        <div class="container">
+                            <img src="img/us.svg" id="flags" width="70" height="47">
+                            <output id="outputCurrencyValue" class="outputCurrencyValue"></output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container flex-container flex-column">
+            <p>Copyright © 2016 sposatoanabel.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
